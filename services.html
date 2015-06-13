@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MC Nails | Services</title>
+    <meta name="description" content="MC Nails">
+    <!-- meta(name="keywords", content="")-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700,600,300" type="text/css">
+    <link rel="stylesheet" href="assets/css/standard.css" media="all" type="text/css">
+    <link rel="stylesheet" href="assets/css/addons/small-screen.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="assets/css/addons/medium-screen.css" media="screen and (min-width: 769px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="assets/css/addons/large-screen.css" media="screen and (min-width: 1200px)">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/mc-icon.ico">
+  </head>
+</html>
+<body ng-app="servicesApp">
+  <div class="side-bar col-lg-3 col-xs-12">
+    <div class="title text-center"> <a href="index.html">MC NAILS</a></div>
+    <hr><a style="cursor: pointer;" class="navbar-button">
+      <div class="glyphicon glyphicon-menu-hamburger"></div>
+      <div class="menu">MENU</div></a>
+    <div class="nav"><a href="index.html#top" class="nav-item">
+        <div class="nav-item">
+          <div class="nav-line"></div>
+          <div class="nav-text text-right">Home</div>
+        </div></a><a href="index.html#mission" class="nav-item">
+        <div class="nav-item">
+          <div class="nav-line"></div>
+          <div class="nav-text text-right">About</div>
+        </div></a><a href="index.html#gallery" class="nav-item">
+        <div class="nav-item">
+          <div class="nav-line nav-line-gallery"></div>
+          <div class="nav-text text-right">Gallery</div>
+        </div></a><a href="index.html#contact" class="nav-item">
+        <div class="nav-item">
+          <div class="nav-line nav-line-contact"></div>
+          <div class="nav-text text-right">Contact</div>
+        </div></a><a style="cursor: pointer;" class="nav-item nav-item-hours">
+        <div class="nav-item">
+          <div class="nav-line"></div>
+          <div class="nav-text text-right">Hours</div>
+        </div></a></div>
+    <div class="hours">
+      <div class="dates text-left">
+        <p>Mon - Fri :</p>
+        <p>Saturday :</p>
+        <p>Sunday :</p>
+      </div>
+      <div class="times text-right">
+        <p>10:00 - 7:30</p>
+        <p>9:30 - 7:00</p>
+        <p>11:00 - 5:00</p>
+      </div>
+    </div>
+    <div class="social-media row">
+      <div class="icons">
+        <div class="icon email"><a href="mailto:minhnha2007@yahoo.com" target="_blank"><img src="assets/img/social-media-icons/email.png"></a></div>
+        <div class="icon yelp"><a href="http://www.yelp.com/biz/mc-nails-fairfax-3" target="_blank"><img src="assets/img/social-media-icons/yelp.png"></a></div>
+        <div class="icon facebook"><a href="https://www.facebook.com/mcnails22031" target="_blank"><img src="assets/img/social-media-icons/facebook.png"></a></div>
+      </div>
+    </div>
+  </div>
+  <div id="top"></div>
+  <div class="main-content col-lg-9 col-xs-12">
+    <div class="page-title">Services</div>
+    <hr>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Services</li>
+    </ol>
+    <div class="blurb">Find your perfect fit from the services we offer, from nail care to skin care. Browse our options below and come in today for a relaxing experience!</div>
+    <div class="blurb">Note: Our manicures and pedicures come with a dip in paraffin wax (popular among many customers), which warms and smoothens your skin. And it's completely free!</div>
+    <div ng-controller="servicesController" class="menu">
+      <div ng-repeat="i in [] | range:services.length" class="category"> 
+        <div class="title">{{services[i].category}}</div><img src="{{services[i].path}}">
+        <div ng-repeat="j in [] | range:services[i].length" class="type">{{services[i].types[j]}}
+          <div class="price">{{services[i].prices[j]}}</div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <div class="col-xs-10 text-right">
+        <h5>Copyright 2015</h5>
+        <h5>Designed by <a target="_blank" href="http://quanhuynh.org">QH</a></h5>
+      </div>
+      <div class="col-xs-2 top-button text-right"><a href="#top"><img src="assets/img/top.png">
+          <h4>Top</h4></a></div>
+    </footer>
+  </div>
+  <!--google maps-->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <!--jQuery + plugins-->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/visible.js"></script>
+  <!--bootstrapjs-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!--angularjs-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <!--user-written-->
+  <script src="assets/js/servicesApp.js"></script>
+  <script src="assets/js/functions.js"></script>
+</body>

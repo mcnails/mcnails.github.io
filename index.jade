@@ -1,0 +1,61 @@
+include ./includes/standard.jade
+body
+	include ./includes/side-nav.jade
+	#top
+	.main-content.col-lg-9.col-xs-12
+		#mainCarousel.carousel.slide(data-interval="4000", data-ride="carousel")
+			ol.carousel-indicators
+				li.active(data-target="#mainCarousel", data-slide-to="0")
+				li(data-target="#mainCarousel", data-slide-to="1")
+				li(data-target="#mainCarousel", data-slide-to="2")
+
+			.carousel-inner
+					.active.item.item1
+						.img-responsive: img(src="assets/img/slideshow/slideshow-pic1.png")
+					.item
+						.img-responsive: img(src="assets/img/slideshow/slideshow-pic2.png")
+					.item
+						.img-responsive: img(src="assets/img/slideshow/slideshow-pic3.png")
+			a.carousel-control.left(href="#mainCarousel", data-slide="prev")
+				span.icon-prev
+			a.carousel-control.right(href="#mainCarousel", data-slide="next")
+				span.icon-next
+		.all-sections
+
+			.section#mission
+				.heading About Us
+				.blurb MC Nails is a local nail salon based in Fairfax, VA. We have been in business since 2009. We started out with two people, but since then, we have grown into something bigger. Despite the many changes that MC Nails have been through, our priority have always been to satisfy the customers. We've earned the trust of many local as well as non-local customers, and along the way we've even made good friends. Come in and try us out!
+			.section#services
+				.heading Services
+				.blurb We offer a wide variety of services to our customers. Check out our price list by clicking the All Services button.
+				img(src="assets/img/services/mani.jpg")
+				img(src="assets/img/services/pedi.jpg")
+				img(src="assets/img/services/skin.jpg")
+				a(href="services.html"): img(src="assets/img/all-services.png")
+
+			.section#gallery
+				.heading Gallery
+				.blurb Want to see our works? Check out our gallery!
+				img(src="assets/img/galleryThumbs/thumb1.jpg")
+				img(src="assets/img/galleryThumbs/thumb2.jpg")
+				img(src="assets/img/galleryThumbs/thumb3.jpg")
+				a(href="gallery.html"): img(src="assets/img/gallery.png")
+
+			.section#contact
+				.heading Contact and Location
+				img(src="assets/img/social-media-icons/phone.png")
+				.blurb 703 218 1666
+				img(src="assets/img/social-media-icons/location.png")
+				.blurb MC Nails is located at <a target="_blank" href="https://www.google.com/maps/place/9645+Fairfax+Blvd,+Fairfax,+VA+22031/@38.8642337,-77.2780638,17z/data=!3m1!4b1!4m2!3m1!1s0x89b64c04539af7c5:0x8d8dbfdc6a978e4c"> 9645 Fairfax Blvd, Fairfax, VA 22031</a> and is part of Fairfax Circle Shopping Center.
+				#map-canvas
+		.concluder
+			.col-md-8.col-xs-9
+				.heading At MC Nails,
+				.blurb You are not just another customer. We will try our absolute best to make sure that you are satisfied with our services. That being said, we need you to help us improve. Speak to us, comment on our social media pages, or email us. We'd love to hear your suggestions on how we can make MC Nails even better. 
+			.col-md-4.col-xs-3.text-center
+				img(src="assets/img/nancy.jpg")
+				.caption MC Nails' manager Nancy
+		
+		include ./includes/footer.jade 
+
+	include ./includes/scripts.jade

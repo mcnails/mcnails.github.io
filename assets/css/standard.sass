@@ -1,0 +1,219 @@
+$base-font: 'Open Sans', sans-serif
+$heading-color: #964B7C
+$text-color: #8C7291
+
+body
+	position: relative
+	overflow-y: scroll
+	overflow-x: hidden
+	margin: 0px
+	padding: 0px
+	font-family: $base-font
+	a
+		color: white
+		&:hover
+			color: white
+			text-decoration: none
+		&:focus
+			text-decoration: none
+
+.side-bar
+	position: relative
+	display: inline-block
+	background:
+		image: url("../img/sidebar.png")
+		size: cover
+		repeat: no-repeat
+
+	.title
+		padding: 35px 0 30px 0
+		color: white
+		text-shadow: 2px 2px 2px #992e82
+		font:
+			size: 40px
+			weight: 800
+
+	.navbar-button
+		display: none
+	
+	.nav
+		.nav-item
+			opacity: 0.8
+			font:
+				size: 18px
+				weight: 800
+			.nav-text
+				color: white
+	.hours
+		display: inline-block
+		opacity: 0
+		transition: ease-out 0.3s
+		p
+			padding: 0 10px 0 10px
+			color: white
+			font:
+				size: 15px
+				weight: 600
+		.dates
+			float: left
+		.times
+			float: left
+
+	.social-media
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A7308E), to(#C550A7))
+		background: -webkit-linear-gradient(top, #A7308E, #C550A7)
+		background: -moz-linear-gradient(top, #A7308E, #C550A7)
+		background: -ms-linear-gradient(top, #A7308E, #C550A7)
+		background: -o-linear-gradient(top, #A7308E, #C550A7)
+		.icons
+			.icon
+				float: right
+				padding: 12px 10px 12px 10px
+				opacity: 0.7
+				transition: linear 0.3s
+				&:hover
+					opacity: 1
+.main-content
+	float: right
+	.carousel
+		height: 100vh
+		overflow: hidden
+		img
+			max-width: 100%
+
+	.section
+		overflow: hidden
+		opacity: 0
+		transform: translate(-50px, 0)
+		transition: ease-in 0.6s
+		img
+			position: relative
+			float: left
+			width: 25%
+			border-radius: 50%
+			transition: linear 0.2s
+			&:hover
+				transform: scale(1.02)
+		.heading
+			font:
+				size: 28px
+				weight: 800
+			color: $heading-color
+		.blurb
+			color: $text-color
+			text-align: left
+			padding: 20px
+			margin: 0 auto
+			font:
+				size: 18px
+				weight: 400
+		#map-canvas
+			width: 70%
+			height: 300px
+			margin: 15px auto
+	.come-in
+		transform: translate(0, 0)
+		opacity: 1
+	#contact
+		img
+			width: 40px
+			margin-bottom: 0
+		a
+			color: black
+			border-bottom: thin dotted black
+
+	.concluder 
+		margin: 60px 0 30px 0
+		width: 100%
+		background-color: #660033
+		.heading
+			padding: 15px
+			color: white
+			font:
+				size: 25px
+				weight: 800
+		.blurb
+			padding: 10px 10px 0 15px
+			color: #C1B6BE
+		.caption
+			color: white
+			font-size: 15px
+		img
+			width: 80%
+			margin: 10px auto
+			border-radius: 50%
+
+footer
+	a
+		color: $heading-color
+		&:hover
+			color: $heading-color
+	img
+		width: 35px
+		height: 35px
+	.top-button
+		padding-bottom: 15px
+
+
+//PAGES
+.page-title
+	padding: 50px 10px 15px 10px
+	font:
+		size: 35px
+		weight: 800
+.breadcrumb
+	background-color: white
+	a
+		color: $heading-color
+		&:hover
+			color: $heading-color
+.blurb
+	text-align: left
+	padding: 15px
+	margin: 0 auto
+	font:
+		size: 18px
+		weight: 400
+	color: $text-color
+
+.menu
+	.category
+		overflow: hidden
+		padding: 50px
+		.title
+			padding-bottom: 15px
+			font:
+				size: 25px
+				weight: 700
+		img
+			display: block
+			float: left
+			width: 20%
+			border-radius: 50%
+		.type
+			float: right
+			padding: 10px
+			width: 60%
+			font:
+				size: 15px
+				weight: 600
+			margin: 3px
+			border: thin solid #ccc
+			color: #BA5990
+			.price
+				color: $heading-color
+				float: right
+				font:
+					size: 15px
+					weight: 700
+
+.galleryPanel
+	width: 90%
+	margin: 0 auto
+	img
+		width: 150px
+		height: 150px
+@media (max-width: 516px)
+	.galleryPanel
+		width: 300px
+		margin: 0 auto

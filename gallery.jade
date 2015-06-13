@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		title MC Nails
+		meta(name="description", content="MC Nails")
+		// meta(name="keywords", content="")
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700,600,300", type="text/css")
+		link(rel="stylesheet", href="assets/css/standard.css", media="all", type="text/css")
+		link(rel="stylesheet", href="assets/css/addons/small-screen.css", media="screen and (max-width: 768px)")
+		link(rel="stylesheet", href="assets/css/addons/medium-screen.css", media="screen and (min-width: 769px) and (max-width: 1200px)")
+		link(rel="stylesheet", href="assets/css/addons/large-screen.css", media="screen and (min-width: 1200px)")
+		link(rel="shortcut icon", type="image/x-icon", href="assets/img/mc-icon.ico")
+		script(type="text/javascript", src="assets/js/yoxview/yoxview-init.js")
+body
+	include ./includes/pages-side-nav.jade
+	#top
+	.main-content.col-lg-9.col-xs-12
+		.page-title Gallery
+		
+		hr
+		
+		ol.breadcrumb
+			li: a(href="index.html") Home
+			li.active Gallery
+		
+		.blurb Take a look at what it's like inside our salon. Also check out our supplies and a few of our works. 
+
+		.galleryPanel
+			.yoxview
+				a(href="assets/img/gallery/pic1.jpg")
+					img(src="assets/img/galleryThumbs/thumb1.jpg", title="Stands")
+				a(href="assets/img/gallery/pic2.jpg")
+					img(src="assets/img/galleryThumbs/thumb2.jpg", title="Polish Rack")
+				a(href="assets/img/gallery/pic3.jpg")
+					img(src="assets/img/galleryThumbs/thumb3.jpg", title="Our Theme")
+				a(href="assets/img/gallery/pic4.jpg")
+					img(src="assets/img/galleryThumbs/thumb4.jpg", title="More Colors")
+
+		hr
+		include ./includes/footer.jade
+	include ./includes/scripts.jade

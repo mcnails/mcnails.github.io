@@ -1,0 +1,27 @@
+include ./includes/standard.jade 
+	|  | Services
+body(ng-app="servicesApp")
+	include ./includes/pages-side-nav.jade
+	#top
+	.main-content.col-lg-9.col-xs-12
+		.page-title Services
+		
+		hr
+		
+		ol.breadcrumb
+			li: a(href="index.html") Home
+			li.active Services
+		
+		.blurb Find your perfect fit from the services we offer, from nail care to skin care. Browse our options below and come in today for a relaxing experience!
+		.blurb Note: Our manicures and pedicures come with a dip in paraffin wax (popular among many customers), which warms and smoothens your skin. And it's completely free!
+		
+		.menu(ng-controller="servicesController")
+			.category(ng-repeat="i in [] | range:services.length") 
+				.title {{services[i].category}}
+				img(src="{{services[i].path}}")
+				.type(ng-repeat="j in [] | range:services[i].length") {{services[i].types[j]}}
+					.price {{services[i].prices[j]}}
+
+		hr
+		include ./includes/footer.jade
+	include ./includes/scripts.jade
