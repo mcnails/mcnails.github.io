@@ -86,17 +86,17 @@ function showMenu() {
 			if (menuHidden) {
 				$('.nav').css('transform', 'translate(0, 0)');
 				$('.nav').css('opacity', '0.9');
-				$('.side-bar').css('height', '+=185px');
+				$('.side-bar').css('height', '+=235px');
 				menuHidden = false;
 			}
 			else {
 				$('.nav').css('transform', 'translate(0, 40px)');
 				$('.nav').css('opacity', '0');
 				if (hoursHidden) {
-					$('.side-bar').css('height', '-=185px');
+					$('.side-bar').css('height', '-=235px');
 				}
 				else {
-					$('.side-bar').css('height', '-=295px');
+					$('.side-bar').css('height', '-=345px');
 					$('.hours').css('transform', 'translate(0, -15px)');
 					$('.hours').css('opacity', '0');
 					hoursHidden = true;
