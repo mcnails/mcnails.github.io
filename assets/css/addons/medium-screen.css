@@ -1,1 +1,123 @@
-.side-bar{display:inline-block;height:200px;padding-bottom:70px;transition:ease-out 0.6s}.side-bar .title{padding:10px 0 5px 0;opacity:0.9;font-size:45px}.side-bar .navbar-button{position:relative;z-index:10;display:inline-block;border:3px white solid;color:white;padding:8px;margin-bottom:10px;opacity:0.8}.side-bar .navbar-button .glyphicon{float:left;width:20px;height:20px;margin-top:6px;padding-right:4px}.side-bar .navbar-button .menu{float:left;font-size:20px;font-weight:800}.side-bar .hours p{padding-left:20px;font-size:16px;font-weight:700}.side-bar .nav{transform:translate(0, 40px);padding-left:15px;opacity:0;transition:ease-out 0.5s}.side-bar .nav .nav-item{display:inline-block;float:left;clear:both;padding:5px 3px 5px 4px;transition:linear 0.2s;font-size:20px}.side-bar .nav .nav-item:hover{opacity:0.9}.side-bar .nav .nav-line{display:none}.side-bar .social-media{position:absolute;top:100px;right:0;background:transparent;display:inline-block;margin:0 auto;background:transparent}.side-bar .social-media .icons .icon{float:left}.side-bar .social-media .icons img{width:50px;height:50px}.main-content{padding:0}.main-content .carousel{height:100%}.main-content .section{padding:20px}.main-content .section img{padding:5px;margin-bottom:50px}.main-content .concluder{height:300px}.main-content .concluder img{width:175px;height:175px}@media (max-width: 1000px){.main-content .concluder .blurb{padding:1px;font-size:0.8em}}.breadcrumb li{font-size:18px}
+.side-bar {
+  display: inline-block;
+  height: 200px;
+  padding-bottom: 70px;
+  transition: ease-out 0.6s;
+}
+
+.side-bar .title {
+  padding: 10px 0 5px 0;
+  opacity: 0.9;
+  font-size: 45px;
+}
+
+.side-bar .navbar-button {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  border: 3px white solid;
+  color: white;
+  padding: 8px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.side-bar .navbar-button .glyphicon {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+  padding-right: 4px;
+}
+
+.side-bar .navbar-button .menu {
+  float: left;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.side-bar .hours p {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.side-bar .nav {
+  transform: translate(0, 40px);
+  padding-left: 15px;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+
+.side-bar .nav .nav-item {
+  display: inline-block;
+  float: left;
+  clear: both;
+  padding: 5px 3px 5px 4px;
+  transition: linear 0.2s;
+  font-size: 20px;
+}
+
+.side-bar .nav .nav-item:hover {
+  opacity: 0.9;
+}
+
+.side-bar .nav .nav-line {
+  display: none;
+}
+
+.side-bar .social-media {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background: transparent;
+  display: inline-block;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.side-bar .social-media .icons .icon {
+  float: left;
+}
+
+.side-bar .social-media .icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.main-content .carousel {
+  height: 100%;
+}
+
+.main-content .section {
+  padding: 20px;
+}
+
+.main-content .section img {
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.main-content .concluder {
+  height: 300px;
+}
+
+.main-content .concluder img {
+  width: 175px;
+  height: 175px;
+}
+
+@media (max-width: 1000px) {
+  .main-content .concluder .blurb {
+    padding: 1px;
+    font-size: 0.8em;
+  }
+}
+
+.breadcrumb li {
+  font-size: 18px;
+}
