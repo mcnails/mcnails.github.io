@@ -15,26 +15,32 @@ servicesApp.factory('servicesData', function(){
 				'Acrylic Full Set',
 				'Refill Acrylic',
 				'Gel Full Set',
+				'UV Gel Full Set',
 				'Refill Gel',
+				'Refill UV Gel',
 				'Pink & White',
 				'Refill Pink Only',
 				'Refill Pink & White',
 				'Take Off Acrylic',
+				'Take Off Gel'
 			],
 			'prices': [
-				13,
-				18,
+				14,
+				19,
 				27,
-				18,
+				19,
 				23,
-				'25+',
-				20,
-				'35+',
-				27,
+				'28+',
+				23,
+				'38+',
+				50,
+				30,
+				38,
 				50,
 				28,
 				40,
 				10,
+				7
 			]
 		},
 		{
@@ -49,11 +55,11 @@ servicesApp.factory('servicesData', function(){
 				'Deluxe Pedicure',
 			],
 			'prices': [
-				23,
-				28,
+				25,
+				30,
 				40,
-				34,
-				38,
+				35,
+				39,
 			]
 		},
 		{
@@ -69,12 +75,12 @@ servicesApp.factory('servicesData', function(){
 				'Deluxe Mani-Pedi',
 			],
 			'prices': [
-				34,
-				44,
-				48,
+				37,
+				47,
+				50,
 				65,
-				49,
-				58,
+				53,
+				60,
 			]
 		},
 		{
@@ -100,7 +106,7 @@ servicesApp.factory('servicesData', function(){
 				8,
 				6,
 				10,
-				15,
+				'15+',
 				20,
 				35,
 				25,
@@ -133,12 +139,14 @@ servicesApp.factory('servicesData', function(){
 				'Regular Finger Nails Polish Change',
 				'Regular Toe Nails Polish Change',
 				'Gel Polish Change',
+				'Repair Acrylic'
 			],
 			'prices': [
 				3,
 				7,
 				10,
 				20,
+				5
 			]
 		},
 	];
