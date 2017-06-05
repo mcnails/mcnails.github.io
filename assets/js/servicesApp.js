@@ -5,7 +5,7 @@ servicesApp.factory('servicesData', function(){
 		{
 			'category': 'Manicures',
 			'path': 'assets/img/services/mani.jpg',
-			'length': 13,
+			'length': 16,
 			'types': [
 				'Standard Manicure',
 				'French Manicure',
@@ -133,7 +133,7 @@ servicesApp.factory('servicesData', function(){
 		{
 			'category': 'Extra Services',
 			'path': 'assets/img/services/extra.jpg',
-			'length': 4,
+			'length': 5,
 			'types': [
 				'Design (per nail)',
 				'Regular Finger Nails Polish Change',
